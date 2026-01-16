@@ -5,6 +5,9 @@ from processor import *
 from datetime import datetime
 import pandas as pd
 import json
+import sys
+import os
+sys.path.insert(0, os.path.abspath("."))
 
 # Initialize session state for storing multiple articles
 if 'articles' not in st.session_state:
