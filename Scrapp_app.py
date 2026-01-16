@@ -5,6 +5,12 @@ from processor import *
 from datetime import datetime
 import pandas as pd
 import json
+import sys
+import os
+
+# Force Streamlit Cloud to see files in current directory
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+sys.path.insert(0, os.getcwd())
 
 # Initialize session state for storing multiple articles
 if 'articles' not in st.session_state:
